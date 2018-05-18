@@ -1,0 +1,127 @@
+
+<div class="jumbotron">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Merchandise Tracking</h1>
+      </div>
+    </div>
+    <div class="row iphone">
+      <div class="col-md-4 col-sm-4">
+        <% if defined? error_message %>
+          <p class="bg-danger"><%= error_message %></p>
+        <% end %>
+        <form action="/" method="POST">
+          <div class="form-group">
+            <label for="name">Name of Supplier</label>
+            <input type="text" class="form-control" name="nameofsupplier" id="nameofsupplier">
+          </div>
+          <div class="form-group">
+            <label for="email">Country</label>
+            <input type="email" class="form-control" name="email" id="email">
+          </div>
+          <div class="form-group">
+            <label for="name">Website Address</label>
+            <input type="text" class="form-control" name="webadd" id="webadd">
+          </div>
+          <div class="form-group">
+            <label for="text">Email Addresses</label>
+            <input type="text" class="form-control" name="emailadd" id="emailadd">
+            <input type="text" class="form-control" name="emailadd2" id="emailadd2">
+          </div>
+          <div class="form-group">
+            <label for="text">Contact Numbers</label>
+            <input type="text" class="form-control" name="contactnum1" id="contactnum1">
+            <input type="text" class="form-control" name="contactnum2" id="contactnum2">
+          </div>
+
+          <div class="form-group">
+            <label for="text">Contact Person</label>
+            <input type="text" class="form-control" name="contactnum1" id="contactperson">
+          </div>
+        </div>
+
+    <div class="col-md-4 col-sm-4">
+
+        <div class="form-group">
+         <label for="exampleFormControlSelect2">Product Category</label>
+         <select multiple class="form-control" id="productcat">
+            <option>Art & Craft</option>
+            <option>Bag (e.g : Woven Bag, Cotton Bag, Cart, Trolley & etc)</option>
+            <option>Board Game & Card</option>
+            <option>Bottle & Mug (e.g : Tumbler, Thermo Flask & etc)</option>
+            <option>Book</option>
+            <option>Box (e.g : Packaging, Storage boxes & etc)</option>
+            <option>Digital & Technology (e.g : Pendrive, Power Bank, Charger, Cable, Speaker, Mouse & etc)</option>
+            <option>Fabric (e.g : Cap, T-Shirt & etc)</option>
+            <option>Furniture</option>
+            <option>Gift & Souvenir (e.g : Tie Pin, Bottle Opener, Keychain, Music Instruments, Ornaments & etc)</option>
+            <option>Keychain</option>
+            <option>Lanyard</option>
+            <option>Laser Pointer</option>
+            <option>Metal & Light</option>
+            <option>Pen</option>
+            <option>Printing & Laminating</option>
+            <option>Puzzle & Building Kit</option>
+            <option>Rubik</option>
+            <option>Safety Vest</option>
+            <option>Umbrella</option>
+            <option>Various</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <br>
+
+        <div>
+         <label for="exampleFormControlSelect2">Businesscard?</label>
+         <select id="businesscard">
+              <option>Yes</option>
+              <option>No</option>
+          </div>
+
+          <div class="form-group">
+            <label for="text">Brochure Category</label>
+            <input type="text" class="form-control" name="brochurecat" id="brochurecat">
+          </div>
+
+
+          <div class="form-group">
+            <label for="text">Product Shipping Time</label>
+            <input type="text" class="form-control" name="productleadshiptime" id="productleadshiptime">
+          </div>
+
+          <div class="form-group">
+            <label for="text">Shipping Cost</label>
+            <input type="text" class="form-control" name="shippingcost" id="shippingcost">
+          </div>
+
+        </div>
+
+  <div class="col-md-4 col-sm-4">
+
+          <div class="form-group">
+            <label for="text">Small Order Numbers</label>
+            <input type="text" class="form-control" name="smallorder(num)" id="smallorder(num)">
+          </div>
+          <div class="form-group">
+            <label for="text">Unit Price for Small Order</label>
+            <input type="text" class="form-control" name="unit price for small order" id="unit price for small order">
+          </div>
+          <div class="form-group">
+            <label for="text">Bulk order</label>
+            <input type="text" class="form-control" name="bulkorder" id="bulkorder">
+          </div>
+          <div class="form-group">
+            <label for="text">Unit Price for Bulk Order</label>
+            <input type="text" class="form-control" name="unit price for bulk order" id="unit price for bulk order">
+          </div>
+          <div class="form-group">
+            <label for="text">Product Sample</label>
+            <input type="text" class="form-control" name="productsample" id="productsample">
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
