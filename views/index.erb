@@ -6,7 +6,7 @@
       </div>
     </div>
     <div class="row iphone">
-      <div class="col-md-4 col-sm-4">
+
         <% if defined? error_message %>
           <p class="bg-danger"><%= error_message %></p>
         <% end %>
@@ -17,7 +17,7 @@
           </div>
           <div class="form-group">
             <label for="country">Country</label>
-            <input type="text" class="form-control" name="email" id="country" >
+            <input type="text" class="form-control" name="country" id="country">
           </div>
           <div class="form-group">
             <label for="name">Website Address</label>
@@ -33,32 +33,64 @@
             <input type="text" class="form-control" name="contactnum1" id="contactnum1">
             <input type="text" class="form-control" name="contactnum2" id="contactnum2">
           </div>
-
           <div class="form-group">
             <label for="text">Contact Person</label>
             <input type="text" class="form-control" name="contactperson" id="contactperson">
           </div>
-        </div>
+          <!-- <div class="form-group">
+            <label for="text">Product Category</label>
+            <input type="text" class="form-control" name="productcat" id="productcat">
+          </div> -->
 
-    <div class="col-md-4 col-sm-4">
 
-        <div class="form-group">
+          <div class="form-group">
+              <label for="text">Product Category</label>
+              <select multiple class="form-control" name="productcat" id="productcat">
+                <option>Arts & Craft</option>
+                <option>Board Game & Card</option>
+                <option>Book</option>
+                <option>Digital & Technology (e.g : Pendrive, Power Bank, Charger, Cable, Speaker, Mouse & etc)</option>
+                <option>Furniture</option>
+                <option>Gift & Souvenir (e.g : Tie Pin, Bottle Opener, Keychain, Music Instruments, Ornaments & etc)</option>
+                <option>Keychain</option>
+                <option>Electronic Item & Kitchen Appliance</option>
+                <option>Lanyard</option>
+                <option>Laser Pointer</option>
+                <option>Metal & Light</option>
+                <option>Pen</option>
+                <option>Printing & Laminating</option>
+                <option>Puzzle & Building Kit</option>
+                <option>Rubik</option>
+                <option>Safety Vest</option>
+                <option>Stationeries</option>
+                <option>Umbrella</option>
+                <option>Various</option>
+              </select>
+
+              <div class="form-check form-check-inline">
+                <label class="form-check-label" for="productcat">Other: </label>
+                <input type="text" class="form-control" name="productcat">
+              </div>
+
+          </div>
+
+        <!-- <div class="form-group">
          <label for="exampleFormControlSelect2">Product Category</label>
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="Art & Craft" id="productcat">
-            <label class="form-check-label" for="productcat">
-              Art & Craft
-            </label>
+            <input type="checkbox" class="form-check-input" name="productcat" id="productcat">
+              <label class="form-check-label" for="productcat">
+                Bag (e.g : Woven Bag, Cotton Bag, Cart, Trolley & etc)
+              </label>
           </div>
 
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="Bag" id="productcat">
+            <input class="form-check-input" type="checkbox" value="Board Game & Card" id="productcat">
             <label class="form-check-label" for="productcat">
-              Bag (e.g : Woven Bag, Cotton Bag, Cart, Trolley & etc)
+              Board Game & Card
             </label>
-          </div>
+          </div> -->
 
-          <div class="form-check">
+          <!--<div class="form-check">
             <input class="form-check-input" type="checkbox" value="Board Game & Card" id="productcat">
             <label class="form-check-label" for="productcat">
               Board Game & Card
@@ -87,7 +119,7 @@
           </div>
 
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="Digital & Technology " id="productcat">
+            <input class="form-check-input" type="checkbox" value="Digital & Technology" id="productcat">
             <label class="form-check-label" for="productcat">
               Digital & Technology (e.g : Pendrive, Power Bank, Charger, Cable, Speaker, Mouse & etc)
             </label>
@@ -184,104 +216,95 @@
             <label class="form-check-label" for="productcat">
               Other
             </label>
-          </div>
-
-        </div>
-        <br>
+          </div> -->
 
         <div>
          <label for="businesscard" style="margin-right: 20px">Businesscard</label>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="businesscard" value="option1">
+            <input class="form-check-input" type="radio" name="businesscard" id="businesscard" value="Yes">
             <label class="form-check-label" for="businesscard">Yes</label>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="businesscard" value="option2">
+            <input class="form-check-input" type="radio" name="businesscard" id="businesscard" value="No">
             <label class="form-check-label" for="businesscard">No</label>
           </div>
         </div>
+
+
         <div class="form-group">
          <label for="brochurecat" style="margin-right: 20px">Brochure/Catalogue</label>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="brochurecat" value="Yes">
+            <input class="form-check-input" type="radio" name="brochurecat" id="brochurecat" value="Yes">
             <label class="form-check-label" for="brochurecat">Yes</label>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="brochurecat" value="No">
+            <input class="form-check-input" type="radio" name="brochurecat" id="brochurecat" value="No">
             <label class="form-check-label" for="brochurecat">No</label>
           </div>
-
         </div>
 
         <div>
           <p>Product Lead & Shipping Time</p>
           <div class="form-check">
-            <input class="form-check-input" type="radio" id="productleadshiptime" value="7 Days">
+            <input class="form-check-input" type="radio" name="productleadshiptime" id="productleadshiptime" value="7 Days">
             <label class="form-check-label" for="productleadshiptime">7 Days</label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" id="productleadshiptime" value="14 Days">
+            <input class="form-check-input" type="radio" name="productleadshiptime" id="productleadshiptime" value="14 Days">
             <label class="form-check-label" for="productleadshiptime">14 Days</label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" id="productleadshiptime" value="30 Days">
+            <input class="form-check-input" type="radio" name="productleadshiptime" id="productleadshiptime" value="30 Days">
             <label class="form-check-label" for="productleadshiptime">30 Days</label>
           </div>
           <div class="form-check">
-            <input class="form-check-input" type="radio" id="productleadshiptime" value="60 Days">
+            <input class="form-check-input" type="radio" name="productleadshiptime" id="productleadshiptime" value="60 Days">
             <label class="form-check-label" for="productleadshiptime">60 Days</label>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" id="productleadshiptime" value="Others">
             <label class="form-check-label" for="productleadshiptime">Other: </label>
-            <input type="text" class="form-control" name="OtherShippingTime" placeholder="Please indicate" style="margin-left: 20px">
+            <input type="text" class="form-control" name="productleadsheip">
           </div>
-
         </div>
-        <div style="margin-top: 30px">
-          <p>Shipping Method</p>
+
+<br>
+          <b>Shipping Method</b>
 
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="shippingmethod" value="Air">
+            <input class="form-check-input" type="checkbox" name="shippingmethod" value="Air">
             <label class="form-check-label" for="shippingmethod">Air</label>
           </div>
-
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="shippingmethod" value="Sea">
-            <label class="form-check-label" for="shippingmethod">Sea</label>
-          </div>
-
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" id="shippingmethod" value="Others">
-            <label class="form-check-label" for="productleadshiptime">Other: </label>
-            <input type="text" class="form-control" name="OtherShippingTime" placeholder="Please indicate" style="margin-left: 20px">
-          </div>
-        </div>
-        <div style="margin-top: 30px">
-            <div class="form-group">
-              <label for="shippingcost">Shipping Cost</label>
-              <input type="text" class="form-control" id="shippingcost" placeholder="Shipping Cost">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="shippingmethod" value="Sea">
+              <label class="form-check-label" for="shippingmethod">Sea</label>
             </div>
-        </div>
-        </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="shippingmethod" value="Others">
+                  <label class="form-check-label" for="productleadshiptime">Other: </label>
+                  <input type="text" class="form-control" name="OtherShippingTime" placeholder="Please indicate" style="margin-left: 20px">
+                </div>
 
-  <div class="col-md-4 col-sm-4">
+                <br>
+                    <div class="form-group">
+                      <label for="shippingcost">Shipping Cost</label>
+                      <input type="text" class="form-control" name="shippingcost" placeholder="Shipping Cost">
+                    </div>
 
           <div class="form-group">
             <label for="text">Small Order Numbers</label>
-            <input type="text" class="form-control" name="smallorder(num)" id="smallordernum">
+            <input type="text" class="form-control" name="smallordernum">
           </div>
           <div class="form-group">
             <label for="text">Unit Price for Small Order</label>
-            <input type="text" class="form-control" name="unit price for small order" id="unitpriceforsmallorder">
+            <input type="text" class="form-control" name="unitpriceforsmallorder">
           </div>
           <div class="form-group">
             <label for="text">Bulk order</label>
-            <input type="text" class="form-control" name="bulkorder" id="bulkorder">
+            <input type="text" class="form-control" name="bulkorder">
           </div>
           <div class="form-group">
             <label for="text">Unit Price for Bulk Order</label>
-            <input type="text" class="form-control" name="unitpriceforbulkorder" id="unit price for bulk order">
+            <input type="text" class="form-control" name="unitpriceforbulkorder">
           </div>
 
           <div class="form-group">
@@ -316,7 +339,6 @@
 
           <button type="submit" class="btn btn-primary">Submit</button>
         </form>
-      </div>
     </div>
   </div>
 </div>
