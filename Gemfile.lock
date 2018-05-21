@@ -45,10 +45,12 @@ GEM
     nokogiri (1.7.0.1)
       mini_portile2 (~> 2.1.0)
     os (0.9.6)
+    pg (1.0.0)
     public_suffix (2.0.5)
     rack (1.6.5)
     rack-protection (1.5.3)
       rack
+    rake (12.3.1)
     representable (3.0.3)
       declarative (< 0.1.0)
       declarative-option (< 0.2.0)
@@ -71,6 +73,8 @@ PLATFORMS
 
 DEPENDENCIES
   google_drive
+  pg
+  rake
   sinatra
 
 RUBY VERSION
