@@ -3,6 +3,7 @@ GEM
   specs:
     addressable (2.5.0)
       public_suffix (~> 2.0, >= 2.0.2)
+    byebug (9.0.6)
     declarative (0.0.9)
     declarative-option (0.1.0)
     faraday (0.11.0)
@@ -75,6 +76,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  byebug
   figaro
   google_drive
   pg
